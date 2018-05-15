@@ -1,6 +1,9 @@
 $(function(){
   
     function drawBottom(){
+
+      
+
         var PMcanvas01 = $(".PMcanvas")[0];
         var cans=PMcanvas01.getContext("2d");
         
@@ -48,53 +51,33 @@ $(function(){
         cans.stroke();
         cans.closePath();
 
-        requestAnimationFrame(rander);
 
+        window.requestAnimationFrame = window.requestAnimationFrame||function (fn) {return setTimeout(fn,1000/60)}
+    window.cancelAnimationFrame = window.cancelAnimationFrame ||clearTimeout;
 
+    window.requestAnimationFrame(rander);
       };
     
       //风力
-      var wind_spd,noise,PM25=60,PM10=60,tmp,hum;
-    $.ajax({
-        url:"https://free-api.heweather.com/s6/weather/now?location=116.40,39.9&key=e4495549270f4719b5cf50a6c94c0b57",
-        methon:"get",
-        success:function(res){
-            noise = 5;
-            tmp = res.HeWeather6[0].now.tmp;
-            hum = res.HeWeather6[0].now.hum;
-            wind_spd = res.HeWeather6[0].now.wind_spd;
-            $(".top-left span").text(tmp);
-            $(".top-right span").text(hum);
-            $(".wind-title span").text(wind_spd);
-            $(".noise-title span").text(noise);
-            $(".middle-num span").text(PM25);
-            $(".middle-bottom span").text(PM10);
-            drawFeng(wind_spd);
-            drawNoise(noise);
-        }
-    })
-    // $.ajax({
-    //     url:"https://free-api.heweather.com/s6/air/now?location=116.40,39.9&key=e4495549270f4719b5cf50a6c94c0b57",
-    //     success:function(res){
-    //         PM25 = 5;
-    //         PM10 = 
-    //         wind_spd = res.HeWeather6[0].now.wind_spd;
-    //         $(".wind-title span").text(wind_spd);
-    //         $(".noise-title span").text(noise);
-    //         drawFeng(wind_spd);
-    //         drawNoise(noise);
-    //     }
-    // })
+      var wind_spd = 7,noise = 3,PM25=60,PM10=60,tmp = 26,hum = 27;
 
+      $(".top-left span").text(tmp);
+      $(".top-right span").text(hum);
+      $(".wind-title span").text(wind_spd);
+      $(".noise-title span").text(noise);
+      $(".middle-num span").text(PM25);
+      $(".middle-bottom span").text(PM10);
+      drawFeng(wind_spd);
+      drawNoise(noise);
       
       function drawFeng(wind_spd){
-        for(let i = $(".wind li").length-1;i>$(".wind li").length-1 - wind_spd;i--){
+        for(var i = $(".wind li").length-1; i>$(".wind li").length-1-wind_spd; i--){
             $(".wind li").eq(i).addClass("active");
+            
         }
       }
       function drawNoise(noise){
-        for(let i = $(".noise li").length-1;i>$(".noise li").length-1 - noise;i--){
-            console.log(i)
+        for(var i = $(".noise li").length-1; i>$(".noise li").length-1 - noise; i--){
             $(".noise li").eq(i).addClass("active");
         }  
       }
