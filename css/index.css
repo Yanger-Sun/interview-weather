@@ -1,0 +1,269 @@
+/* reset.css*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:top;
+    background:transparent;
+    font-family: "微软雅黑";
+}
+
+body {
+    line-height:1;
+    background: #FAFAFA;
+}
+
+:focus {
+	outline: 1;
+}
+
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary { 
+    display:block;
+}
+
+nav, ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted #000;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:top;
+}
+
+.background{
+    width:100%;
+    height:676px;
+    padding-top: 238px;
+    background: url("../images/background.jpg") top center no-repeat;
+}
+.block{
+    width:620px;
+    height:490px;
+    margin: 0 auto;
+}
+.block-top{
+    width:100%;
+    height:78px;
+}
+.block-top ul{
+    width:437px;
+    height:43px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.block-top ul li{
+    width:50%;
+    text-align: center;
+    float: left;
+    line-height: 43px;
+    font-size: 18px;
+    color:#fff;
+}
+
+
+.block-middle .left{
+    width:127px;
+    height:336px;
+    float: left;
+}
+.block-middle .right{
+    float: right;
+    width:110px;
+    height:336px;
+}
+.classification{
+    margin: 0 auto;
+    width: 65px;
+}
+.classification li{
+    width:65px;
+    height:8px;
+    background: #022f58;
+    margin-bottom: 21px;
+    position: relative;
+}
+.right .classification li{
+    margin-bottom: 16px;
+}
+.classification li span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #0488e2;
+    width: 65px;
+    height:0;
+}
+.classification li.active span{
+    height:8px;
+}
+
+.classificationtitle{
+    color:#fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.middle.classification{
+    width:256px;
+    height: 336px;
+    margin: 0 auto;
+}
+.middle-float{
+    height:278px;
+    padding-top: 41px;
+    width:256px;
+    position:relative;
+}
+.PMcanvas{
+    
+}
+.PMcanvas-color{
+    position: absolute;
+    top:41px;
+    left:0;
+}
+
+.classification-13 span{
+    transition: all  cubic-bezier(0.97, 0.96, 0, -0.01) 0.2s;
+}
+.classification-12 span{
+    transition: all  cubic-bezier(0.97, 0.96, 0, -0.01) 0.2s 0.4s;
+}
+.classification-11 span{
+    transition: all  cubic-bezier(0.97, 0.96, 0, -0.01) 0.2s 0.8s;
+}
+.classification-10 span{
+    transition: all  cubic-bezier(0.97, 0.96, 0, -0.01) 0.2s 1.2s;
+}
+.classification-9 span{
+    transition: all  cubic-bezier(0.97, 0.96, 0, -0.01) 0.2s 1.6s;
+}
+.classification-8 span{
+    transition: all  cubic-bezier(0.97, 0.96, 0, -0.01) 0.2s 2s;
+}
+.classification-7 span{
+    transition: all  cubic-bezier(0.97, 0.96, 0, -0.01) 0.2s 2.4s;
+}
+.classification-6 span{
+    transition: all  cubic-bezier(0.97, 0.96, 0, -0.01) 0.2s 2.8s;
+}
+.classification-5 span{
+    transition: all  cubic-bezier(0.97, 0.96, 0, -0.01) 0.2s 3.2s;
+}
+.classification-4 span{
+    transition: all  cubic-bezier(0.97, 0.96, 0, -0.01) 0.2s 3.6s;
+}
+.classification-3 span{
+    transition: all  cubic-bezier(0.97, 0.96, 0, -0.01) 0.2s 4s;
+}
+.classification-2 span{
+    transition: all  cubic-bezier(0.97, 0.96, 0, -0.01) 0.2s 4.4s;
+}
+.classification-1 span{
+    transition: all  cubic-bezier(0.97, 0.96, 0, -0.01) 0.2s 4.8s;
+}
+
+.middle-Content{
+    width:256px;
+    height:86px;
+    position: absolute;
+    top:116px;
+    left:0;
+    text-align: center;
+}
+.middle-quality{
+    font-size: 32px;
+    color:#00d82e;
+    font-weight: inherit;
+    line-height: 50px;
+}
+.middle-num{
+    font-size: 22px;
+    color:#fff;
+    line-height: 35px;
+}
+.middle-bottom{
+    width:256px;
+    height:50px;
+    color:#fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+

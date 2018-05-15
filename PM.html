@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>  
+</head>
+<body>
+    <div class="background">
+
+        <dl class="block">
+
+            <dd class="block-top">
+                <ul>
+                   <li class="top-left">气温：<span>24</span>℃</li>
+                   <li class="top-right">湿度：<span>19</span>%</li>
+                </ul>
+            </dd>
+
+            <dd class="block-middle">
+            <div class="left">
+                <ul class="noise classification">
+                    <li class="classification-3"><span></span></li>
+                    <li class="classification-4"><span></span></li>
+                    <li class="classification-5"><span></span></li>
+                    <li class="classification-6"><span></span></li>
+                    <li class="classification-7"><span></span></li>
+                    <li class="classification-8"><span></span></li>
+                    <li class="classification-9"><span></span></li>
+                    <li class="classification-10"><span></span></li>
+                    <li class="classification-11"><span></span></li>
+                    <li class="classification-12"><span></span></li>
+                    <li class="classification-13"><span></span></li>
+                </ul>
+                <p class="noise-title classificationtitle">噪声:
+                    <span>12</span>分贝
+                </p>
+            </div>
+            <div class="right">
+                <ul class="wind classification">
+                    <li class="classification-1"><span></span></li>
+                    <li class="classification-2"><span></span></li>
+                    <li class="classification-3"><span></span></li>
+                    <li class="classification-4"><span></span></li>
+                    <li class="classification-5"><span></span></li>
+                    <li class="classification-6"><span></span></li>
+                    <li class="classification-7"><span></span></li>
+                    <li class="classification-8"><span></span></li>
+                    <li class="classification-9"><span></span></li>
+                    <li class="classification-10"><span></span></li>
+                    <li class="classification-11"><span></span></li>
+                    <li class="classification-12"><span></span></li>
+                    <li class="classification-13"><span></span></li>
+                </ul>
+                <p class="wind-title classificationtitle">风力:
+                        <span>3</span>级
+                </p>
+            </div>
+            <div class="middle classification">
+                <div class="middle-float">
+                    <canvas class="PMcanvas" width="256" height="256"></canvas>
+                    <canvas class="PMcanvas-color" width="256" height="256"></canvas>
+                    <div class="middle-Content">
+                        <h1 class="middle-quality">
+                            良
+                        </h1>
+                        <p class="middle-num">PM2.5：<span>75</span>ug/㎡</p>
+                    </div>
+                </div>
+                <div class="middle-bottom">PM10:<span>75</span>ug/㎡</div>
+            </div>
+            </dd>
+
+            
+            <dd class="block-bottom">
+                
+            </dd>
+        </dl>
+
+    </div>
+    
+    <script src="js/index.js"></script>
+</body>
+</html>
